@@ -1,11 +1,11 @@
 import React from "react";
 
-function Jobs() {
-  return (
-    <div>
-      <h1> jobs title</h1>
-    </div>
-  );
+function Jobs(){
+    return(
+        <div>
+            <h1> jobs listing</h1>
+        </div>
+    );
 }
 
 export default Jobs;

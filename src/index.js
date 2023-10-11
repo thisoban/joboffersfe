@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./index.css";
-import App from "./App";
-import Job from "./Pages/Job";
-import Jobs from "./Pages/jobs";
-import Navbar from "./Component/Navbar";
+import "bootstrap/dist/css/bootstrap.css"
+import './index.css';
+import App from './App';
+import Job from './Pages/Job';
+import Jobs from './Pages/jobs';
+import Navbar from './Component/Navbar';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
