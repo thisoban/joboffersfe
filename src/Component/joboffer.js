@@ -1,11 +1,9 @@
 import React from "react";
 
-function Jobs() {
+export default function joboffer() {
   return (
     <div>
-      <h1> jobs title</h1>
+      <h1>help me</h1>
     </div>
   );
 }
-
-export default Jobs;
