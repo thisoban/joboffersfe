@@ -64,7 +64,7 @@ const job = () => {
               <p>Location: New York, NY</p>
               <p>
                 Website:{" "}
-                <a href="https://www.acmesoftware.com" target="_blank">
+                <a href="https://www.acmesoftware.com" target="www.google.com">
                   www.acmesoftware.com
                 </a>
               </p>

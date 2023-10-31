@@ -18,7 +18,6 @@ const jobs = [
     location: "San Francisco, CA",
     applyLink: "apply-frontend-developer",
   },
-  // Add more job listings here...
 ];
 
 const JobListings = () => {
