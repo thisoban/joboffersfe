@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.css"
-import './index.css';
-import App from './App';
-import Job from './Pages/Job';
-import Jobs from './Pages/jobs';
-import Navbar from './Component/Navbar';
+import "bootstrap/dist/css/bootstrap.css";
+import "./index.css";
+import App from "./App";
+import Job from "./Pages/Job";
+import Jobs from "./Pages/jobs";
+import Navbar from "./Component/Navbar";
+import Login from "./Pages/Login";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -17,6 +18,7 @@ root.render(
         <Route index element={<App />} />
         <Route path="/job" element={<Job />} />
         <Route path="/jobs" element={<Jobs />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
