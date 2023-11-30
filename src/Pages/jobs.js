@@ -1,5 +1,5 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
+//import axios from "axios"; , { useEffect, useState }
+import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 
 const jobs = [
