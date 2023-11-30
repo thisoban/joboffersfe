@@ -31,6 +31,7 @@ export default function JobListings() {
       .then((Response)=> {
         setTestData(Response.data);
         console.log(Response.data);
+        console.log(testData);
       })
       .catch((error) => {
         // Handle any errors that occurred during the request
