@@ -7,7 +7,7 @@ import App from "./App";
 import Job from "./Pages/Job";
 import Jobs from "./Pages/jobs";
 import Navbar from "./Component/Navbar";
-import Login from "./Pages/Login";
+// import Login from "./Pages/Login";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -16,9 +16,10 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route index element={<App />} />
-        <Route path="/job" element={<Job />} />
+        <Route path="/home" element={<App />} />
         <Route path="/jobs" element={<Jobs />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/job" element={<Job />} />
+        {/* <Route path="/login" element={<Login />} /> */}
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

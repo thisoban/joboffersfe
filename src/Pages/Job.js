@@ -7,12 +7,13 @@ import { Container, Row, Col, Card, Button } from "react-bootstrap";
 export default function Job()  {
   const [JobData, setJobData] = useState({});
   useEffect(() => {
-    const apiUrl = 'http://localhost:4863/Jobs/details?id=1';
+    const apiUrl = 'http://localhost:8080/Jobs/details?id=1';
 
     axios.get(apiUrl)
       .then((response) => {
         // Set the jobData state with the API response data
         setJobData(response.data);
+        console.log(response.data);
       })
       .catch((error) => {
         // Handle any errors that occurred during the request
@@ -27,11 +28,13 @@ export default function Job()  {
           <Card>
             <Card.Body>
               <h2>{JobData.name}</h2>
+              {/* {f} */}
               <p>
                 We are looking for a passionate and talented Software Developer
                 to join our team.
               </p>
               <h3>Job Description</h3>
+              
               <ul>
                 <li>
                   Design and develop web applications using JavaScript and React

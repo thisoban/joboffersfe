@@ -1,4 +1,5 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 
 const jobs = [
@@ -20,7 +21,24 @@ const jobs = [
   },
 ];
 
-const JobListings = () => {
+export default function JobListings() {
+ 
+  const [testData, setTestData] = useState({});
+    useEffect(()=> 
+    {
+      const apiUrl = "http://localhost:8080/jobs/List";
+      axios.get(apiUrl)
+      .then((Response)=> {
+        setTestData(Response.data);
+        console.log(Response.data);
+      })
+      .catch((error) => {
+        // Handle any errors that occurred during the request
+        console.error('Error:', error);
+      });
+    },
+      
+    []);
   return (
     <Container className="my-4">
       <h1>Job Listings</h1>
@@ -44,4 +62,3 @@ const JobListings = () => {
   );
 };
 
-export default JobListings;
