@@ -23,23 +23,23 @@ const jobs = [
 
 export default function JobListings() {
  
-  const [testData, setTestData] = useState({});
-    useEffect(()=> 
-    {
-      const apiUrl = "http://localhost:8080/jobs/List";
-      axios.get(apiUrl)
-      .then((Response)=> {
-        setTestData(Response.data);
-        console.log(Response.data);
-        console.log(testData);
-      })
-      .catch((error) => {
-        // Handle any errors that occurred during the request
-        console.error('Error:', error);
-      });
-    },
+  // const [testData, setTestData] = useState({});
+  //   useEffect(()=> 
+  //   {
+  //     const apiUrl = "http://localhost:8080/jobs/List";
+  //     axios.get(apiUrl)
+  //     .then((Response)=> {
+  //       setTestData(Response.data);
+  //       console.log(Response.data);
+  //       console.log(testData);
+  //     })
+  //     .catch((error) => {
+  //       // Handle any errors that occurred during the request
+  //       console.error('Error:', error);
+  //     });
+  //   },
       
-    []);
+  //   []);
   return (
     <Container className="my-4">
       <h1>Job Listings</h1>
