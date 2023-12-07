@@ -1,5 +1,4 @@
-
-name: codescan
+name: Build
 on:
  push:
    branches:
@@ -15,12 +14,11 @@ jobs:
         with:
           fetch-depth: 0 
       - name: Install dependencies
-        run: npm install
+        run: npm
       - name: Test and coverage
         run: npm test --coverage
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SONAR_TOKEN: ${{ secrets.SONARCLOUD_TOKEN }}
-       
+          SONAR_TOKEN: ${{ secrets. SONARCLOUD_TOKEN }}
