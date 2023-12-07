@@ -23,13 +23,13 @@ const jobs = [
 
 export default function JobListings() {
  
-  // const [testData, setTestData] = useState({});
+  // const [jobsData, setJobData] = useState({});
   //   useEffect(()=> 
   //   {
   //     const apiUrl = "http://localhost:8080/jobs/List";
   //     axios.get(apiUrl)
   //     .then((Response)=> {
-  //       setTestData(Response.data);
+  //       setJobData(Response.data);
   //       console.log(Response.data);
   //       console.log(testData);
   //     })
