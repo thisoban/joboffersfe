@@ -31,16 +31,16 @@ function Navbar() {
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/login">
-                login
-              </a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="/jobs">
                 jobs
               </a>
             </li>
           </ul>
+          <li class="nav-item">
+              <a class="nav-link" href="/login">
+                login
+              </a>
+            </li>
           <form class="d-flex" role="search">
             <input
               class="form-control me-2"
