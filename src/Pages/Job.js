@@ -48,14 +48,12 @@ export default function Job()  {
               <h3>Job Description</h3>
               
               <ul>
-              {JobData.description?.split(".").map((item, i) => (
+              {JobData.description?.split("/.").map((item, i) => (
                 <li key={i}>{item}</li>
               ))}
               </ul>
 
-             <h3> job specifications</h3>
-                <li> {JobData.start}</li>
-                <li> {JobData.end}</li>
+             <h5> job duration from {JobData.start} till {JobData.end} </h5>
               <Button variant="primary">Apply Now</Button>
             </Card.Body>
           </Card>

@@ -30,7 +30,11 @@ function Navbar() {
                 job
               </a>
             </li>
-
+            <li class="nav-item">
+              <a class="nav-link" href="/login">
+                login
+              </a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="/jobs">
                 jobs
