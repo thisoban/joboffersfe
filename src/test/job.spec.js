@@ -9,3 +9,21 @@ test("check existing text", () => {
     expect(jobdescriptontext).toBeInTheDocument();
 
 });
+
+test("check existing text", () => {
+    const {getByText} =render (<Job/>);
+
+    const applynowtext = getByText('Apply Now');
+    expect(applynowtext).toBeInTheDocument();
+
+});
+
+test("check existing text", () => {
+    const {getByText} =render (<Job/>);
+
+    const hiringmanagertext = getByText('Hiring Manager');
+    expect(hiringmanagertext).toBeInTheDocument();
+
+});
+
+

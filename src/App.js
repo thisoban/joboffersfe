@@ -11,7 +11,6 @@ function App() {
       <header className="App-header" data-testid="app-header">
       </header>
     <h1>home page</h1>
-
     {/* {session ? (
         <p>Welcome, {session.user.name}!</p>
       ) : (

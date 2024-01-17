@@ -28,7 +28,6 @@ export default function Job()  {
           <Card>
             <Card.Body>
               <h2>{JobData.name}</h2>
-              {/* {f} */}
               <p>
                 We are looking for a passionate and talented Software Developer
                 to join our team.
@@ -41,10 +40,11 @@ export default function Job()  {
               ))}
               </ul>
 
-              <ul>
+             <h3> job specifications</h3>
                 <li> {JobData.start}</li>
+                <li> {JobData.end}</li>
                
-              </ul>
+              
               <Button variant="primary">Apply Now</Button>
             </Card.Body>
           </Card>
@@ -72,7 +72,12 @@ export default function Job()  {
                 className="img-fluid"
               />
               <h4>{JobData.companyid?.name}</h4>
-              <p>Location: {JobData.companyid?.city}, {JobData.companyid?.zipcode}</p>
+           
+              <p>
+                Address: {JobData.companyid?.adres}
+                </p>
+                <p> zipcode: {JobData.companyid?.zipcode}</p>
+                <p>Location: {JobData.companyid?.city}</p>
               <p>
                 Website:{" "}
                 <a href={JobData.companyid?.website} target={JobData.companyid?.website}>

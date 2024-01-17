@@ -1,28 +1,6 @@
-
 import React , { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import JobListings from "../Component/jobslisting"; 
-import { Row, Col, Card, Button } from "react-bootstrap";
-
-// const jobs = [
-//   {
-//     id: 1,
-//     title: "Software Developer",
-//     description:
-//       "We are looking for a passionate and talented Software Developer to join our team.",
-//     location: "New York, NY",
-//     applyLink: "apply-software-developer",
-//   },
-//   {
-//     id: 2,
-//     title: "Frontend Developer",
-//     description:
-//       "Join our team as a Frontend Developer and help build amazing user interfaces.",
-//     location: "San Francisco, CA",
-//     applyLink: "apply-frontend-developer",
-//   },
-// ];
-
 export default function Jobs() {
  
   const [jobData, setJobData] = useState([]);
