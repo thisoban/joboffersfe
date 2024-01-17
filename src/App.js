@@ -1,6 +1,4 @@
-// import SessionProvider, {  useSession } from 'next-auth/react';
-import { useEffect } from "react";
-
+import React from "react";
 
 function App() {
   // const { data: session } = useSession();
