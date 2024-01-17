@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 
-
-
 export default function Job()  {
+  const id = window.location.pathname.split("/")[2];
   const [JobData, setJobData] = useState({});
+  
   useEffect(() => {
-    const apiUrl = 'http://localhost:8080/Jobs/details?id=1';
+    const apiUrl = `http://localhost:8080/Jobs/details?id=${id}`;
 
     axios.get(apiUrl)
       .then((response) => {
@@ -36,24 +36,14 @@ export default function Job()  {
               <h3>Job Description</h3>
               
               <ul>
-                <li>
-                  Design and develop web applications using JavaScript and React
-                </li>
-                <li>
-                  Collaborate with the development team to implement new
-                  features
-                </li>
-                <li>Optimize applications for maximum performance</li>
-                <li>Write clean, maintainable, and efficient code</li>
+              {JobData.description?.split("\.").map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
               </ul>
-              <h3>Requirements</h3>
+
               <ul>
-                <li>Bachelor's degree in Computer Science or related field</li>
-                <li>
-                  Proficiency in JavaScript, React, and related technologies
-                </li>
-                <li>Strong problem-solving skills</li>
-                <li>Excellent communication and teamwork abilities</li>
+                <li> {JobData.start}</li>
+               
               </ul>
               <Button variant="primary">Apply Now</Button>
             </Card.Body>
@@ -96,5 +86,3 @@ export default function Job()  {
     </Container>
   );
 };
-
-
